@@ -3,6 +3,7 @@ package com.timeconverter.maven.quickstart;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class TimeConverter {
 	private String orignalTime;
 
