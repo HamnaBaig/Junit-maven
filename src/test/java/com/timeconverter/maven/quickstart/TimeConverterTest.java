@@ -96,4 +96,26 @@ public void verifycolon()
 			
 		
 }
+@Test
+public void beforeValue()
+{
+	TimeConverter converter = new TimeConverter();
+	boolean actualResult = converter.isValidInput("13:00am");
+	Assert.assertEquals(false, actualResult);
+
+		
+			
+		
+}
+@Test
+public void aeforeValue()
+{
+	TimeConverter converter = new TimeConverter();
+	boolean actualResult = converter.isValidInput("11:70pm");
+	Assert.assertEquals(false, actualResult);
+
+		
+			
+		
+}
 }

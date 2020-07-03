@@ -60,14 +60,21 @@ public class TimeConverter {
 
 		try {
 			String before_colon = getBeforeColonString(input);
-			Integer.parseInt(before_colon);
+			int before_value = Integer.parseInt(before_colon);
+			if (before_value > 12) {
+				return false;
+			}
 		} catch (Exception ex) {
 			return false;
 		}
 
 		try {
 			String after_colon = getAfterColonString(input);
-			Integer.parseInt(after_colon);
+			int after_value = Integer.parseInt(after_colon);
+			if(after_value > 60)
+			{
+				return false;
+			}
 		} catch (Exception ex) {
 			return false;
 		}
